@@ -239,7 +239,7 @@ export const WorkshopView: React.FC = () => {
         {/* Computador: escuro à esquerda (texto), limpo à direita (grupo e brasa). Telemóvel: o texto ocupa a largura toda, por isso escurece de baixo para cima. */}
         <div className="absolute inset-0 hidden md:block" style={{ background: 'linear-gradient(to right, rgba(26,26,26,0.92) 0%, rgba(26,26,26,0.7) 35%, rgba(26,26,26,0.15) 65%, rgba(26,26,26,0) 100%), linear-gradient(to top, rgba(26,26,26,0.85) 0%, rgba(26,26,26,0) 45%)' }} />
         <div className="absolute inset-0 md:hidden" style={{ background: 'linear-gradient(to top, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.8) 45%, rgba(26,26,26,0.25) 80%, rgba(26,26,26,0.1) 100%)' }} />
-        <div className="relative max-w-6xl mx-auto px-5 pb-16 min-h-[40rem] md:min-h-[40rem] pt-48 md:pt-8 flex flex-col justify-end gap-6">
+        <div className="relative max-w-[74rem] mx-auto px-4 pb-16 min-h-[40rem] md:min-h-[40rem] pt-48 md:pt-8 flex flex-col justify-end gap-6">
           <div className="flex flex-col gap-6 max-w-[46rem]">
             <div>
               <span className="inline-block bg-bbq-yellow text-bbq-black border-2 border-bbq-black shadow-hard-sm px-3 py-1 font-black text-[10px] tracking-[0.05em] uppercase">Workshop de churrasco · Lisboa</span>
@@ -272,7 +272,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* CONHECE O WORKSHOP */}
       <section id="workshop" className="bg-bbq-cream text-bbq-black border-b-4 border-bbq-yellow">
-        <div className="max-w-6xl mx-auto px-5 py-20 flex flex-col gap-10">
+        <div className="max-w-[74rem] mx-auto px-4 py-20 flex flex-col gap-10">
           <div className="flex flex-col gap-4 max-w-[46rem]">
             <Eyebrow color="text-bbq-red">O workshop</Eyebrow>
             <H2>Conhece o workshop</H2>
@@ -297,7 +297,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* APRENDER, COM CERVEJA NA MÃO */}
       <section className="bg-bbq-red text-white border-b-4 border-bbq-yellow">
-        <div className="max-w-6xl mx-auto px-5 py-20 grid gap-10 items-center" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(18rem, 100%), 1fr))' }}>
+        <div className="max-w-[74rem] mx-auto px-4 py-20 grid gap-10 items-center" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(18rem, 100%), 1fr))' }}>
           <div className="flex flex-col gap-5">
             <H2>Aprender, com cerveja na mão</H2>
             <p className="m-0 text-lg leading-relaxed font-medium">À volta do fogo há sempre trabalho para dividir. Alguém segura a pinça, alguém corta, alguém tem uma opinião sobre o sal. Não há jogos para quebrar o gelo nem rodas de apresentações. Há uma grelha, uma tarefa e uma cerveja. A conversa vem sozinha.</p>
@@ -316,7 +316,7 @@ export const WorkshopView: React.FC = () => {
       </section>
 
       {/* O QUE VAIS DOMINAR */}
-      <section className="max-w-6xl mx-auto px-5 py-20 flex flex-col gap-10">
+      <section className="max-w-[74rem] mx-auto px-4 py-20 flex flex-col gap-10">
         <div className="flex flex-col gap-4 max-w-[44rem]">
           <Eyebrow>O que vais dominar</Eyebrow>
           <H2>Oito coisas que deixas de errar</H2>
@@ -335,7 +335,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* COMO CORRE A TARDE */}
       <section className="bg-bbq-cream text-bbq-black border-y-4 border-bbq-yellow">
-        <div className="max-w-6xl mx-auto px-5 py-20 flex flex-col gap-10">
+        <div className="max-w-[74rem] mx-auto px-4 py-20 flex flex-col gap-10">
           <div className="flex flex-col gap-4">
             <Eyebrow color="text-bbq-red">Como corre a tarde</Eyebrow>
             <H2>Do carvão à mesa</H2>
@@ -365,7 +365,7 @@ export const WorkshopView: React.FC = () => {
       </section>
 
       {/* O QUE ESTÁ INCLUÍDO + PREÇO */}
-      <section className="max-w-6xl mx-auto px-5 py-20 grid gap-10 items-start" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(18rem, 100%), 1fr))' }}>
+      <section className="max-w-[74rem] mx-auto px-4 py-20 grid gap-10 items-start" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(18rem, 100%), 1fr))' }}>
         <div className="flex flex-col gap-6">
           <Eyebrow>O que está incluído</Eyebrow>
           <H2>Tudo. Só trazes a fome.</H2>
@@ -394,7 +394,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* PITMASTERS */}
       <section className="border-t-4 border-bbq-cream">
-        <div className="max-w-6xl mx-auto px-5 py-20 flex flex-col gap-10">
+        <div className="max-w-[74rem] mx-auto px-4 py-20 flex flex-col gap-10">
           <div className="flex flex-col gap-4">
             <Eyebrow>Os pitmasters</Eyebrow>
             <H2>Quem puxa pela tarde</H2>
@@ -420,7 +420,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* FAQ */}
       <section id="faq" className="bg-bbq-cream text-bbq-black border-t-4 border-bbq-yellow">
-        <div className="max-w-3xl mx-auto px-5 py-20 flex flex-col gap-8">
+        <div className="max-w-3xl mx-auto px-4 py-20 flex flex-col gap-8">
           <H2>Perguntas frequentes</H2>
           <div className="flex flex-col gap-3">
             {FAQS.map((f, i) => {
@@ -446,7 +446,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* WORKSHOPS RECENTES */}
       <section id="calendario" className="bg-bbq-cream text-bbq-black border-t-4 border-bbq-yellow">
-        <div className="max-w-6xl mx-auto px-5 py-20 flex flex-col gap-8">
+        <div className="max-w-[74rem] mx-auto px-4 py-20 flex flex-col gap-8">
           <div className="flex flex-col gap-4 max-w-[44rem]">
             <Eyebrow color="text-bbq-red">Calendário</Eyebrow>
             <H2>Workshops recentes</H2>
@@ -474,7 +474,7 @@ export const WorkshopView: React.FC = () => {
 
       {/* WAITING LIST */}
       <section id="reserva" ref={formRef} className="border-t-4 border-bbq-black scroll-mt-24">
-        <div className="max-w-2xl mx-auto px-5 py-20 flex flex-col gap-8">
+        <div className="max-w-2xl mx-auto px-4 py-20 flex flex-col gap-8">
           <div className="flex flex-col gap-4">
             <Eyebrow>Lista de espera</Eyebrow>
             <H2>Entra na lista</H2>
