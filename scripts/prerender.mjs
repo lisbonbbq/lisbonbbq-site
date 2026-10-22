@@ -136,6 +136,21 @@ for (const route of routes) {
   }
 
   let html = template.replace("</head>", `    ${blocks.join("\n    ")}\n</head>`);
+  // Imagem de partilha própria (WhatsApp, Facebook, LinkedIn): substitui a
+  // og:image genérica do index.html. Deve ser JPG 1200x630 — o WhatsApp
+  // nem sempre mostra WebP.
+  if (route.ogImage) {
+    const ogImage = route.ogImage.startsWith("http") ? route.ogImage : `${SITE}${route.ogImage}`;
+    html = html.replace(
+      /<meta property="og:image" content="[^"]*" \/>/,
+      [
+        `<meta property="og:image" content="${esc(ogImage)}" />`,
+        `<meta property="og:image:width" content="1200" />`,
+        `<meta property="og:image:height" content="630" />`,
+        `<meta property="og:image:type" content="image/jpeg" />`,
+      ].join("\n    ")
+    );
+  }
   const bodySnapshot = readBodySnapshot(route.path);
   if (bodySnapshot) {
     html = html.replace('<div id="root"></div>', `<div id="root">${bodySnapshot}</div>`);
